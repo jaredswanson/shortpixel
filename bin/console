@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "short_pixel"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+require "pry"
+# Pry.start
+
+client = ShortPixel::Client.new(api_key: ENV["SHORTPIXEL_API_KEY"])
+
+puts
+puts "'client' variable created as a ShortPixel::Client using ENV['SHORTPIXEL_API_KEY'] as the API key."
+puts
+# png1 = 'https://mapright.s3.us-east-1.amazonaws.com/public/mapfish/maps/f9b5ffde-75bc-437d-b974-f071376a7a33.png'
+# pngs = [png1]
+# reducer = client.reducer.info(lossy: 1, urllist: pngs)
+
+require "irb"
+IRB.start(__FILE__)
