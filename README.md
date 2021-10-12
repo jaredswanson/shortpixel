@@ -21,12 +21,33 @@ Or install it yourself as:
     $ gem install short_pixel
 
 ## Usage
+### Reducer
+The ShortPixel Reducer API expects an array of publically available urls for your images. (If you need to upload the urls from the local machine to ShortPixel use the PostReducer API.)
+
 ```ruby
-client = ShortPixel::Client.new(api_key: ENV["SHORTPIXEL_API_KEY"])
-client.reducer
-client.post_reducer
+pngs = ['https://fakeurl.com/first_image.png', 'https://fakeurl.com/second_image.png']
+
+client = ShortPixel::Client.new(api_key: <<SHORTPIXEL_API_KEY>>)
+
+reducer = client.reducer
+initial_request = reducer.call((lossy: 1, urllist: pngs)
+
+# Wait for images to process
+
+follow_up_request = reducer.recall
+
+# Or repeat the original request
+
+alternate_follow_up = reducer.call((lossy: 1, urllist: pngs)
 ```
 
+For a list of parameters to use with the Reducer API, check out ShortPixel's [official API docs](https://shortpixel.com/api-docs).
+
+For example, you could modify "initial_request" above like this:
+
+```ruby
+initial_request = reducer.call(lossy: 1, urllist: pngs, wait: 5, convertto: '+webp')
+```
 
 ## Development
 

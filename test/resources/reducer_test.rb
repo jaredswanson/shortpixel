@@ -31,6 +31,5 @@ class ReducerResourceTest < Minitest::Test
     assert_kind_of OpenStruct, status
     assert_kind_of String, status.code
     assert_kind_of String, status.message
-
   end
 end
