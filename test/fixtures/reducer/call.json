@@ -1,0 +1,9 @@
+[
+    {
+        "Status": {
+            "Code": "1",
+            "Message": "Image scheduled for processing."
+        },
+        "OriginalURL": "https://fakeurl.com/fake-image.png"
+    }
+]

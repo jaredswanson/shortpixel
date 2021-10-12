@@ -7,6 +7,7 @@ module ShortPixel
     end
 
     def post_request(url, body)
+      # binding.pry
       client.connection.post(url, body.merge(key: client.api_key))
     end
 
