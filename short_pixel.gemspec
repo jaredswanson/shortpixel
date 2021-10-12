@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Ruby bindings for ShortPixel Api"
   spec.description   = "Ruby bindings for ShortPixel Api. ShortPixel Api docs can be found here: https://shortpixel.com/api-docs"
-  spec.homepage      = "https://github.com/jaredmswanson/short_pixel.rb"
+  spec.homepage      = "https://github.com/jaredswanson/short_pixel"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
