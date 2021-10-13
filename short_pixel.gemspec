@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative "lib/short_pixel/version"
+require_relative "lib/shortpixel/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "short_pixel"
+  spec.name          = "shortpixel"
   spec.version       = ShortPixel::VERSION
   spec.authors       = ["Jared"]
   spec.email         = ["jaredmswanson@gmail.com"]
 
   spec.summary       = "Ruby bindings for ShortPixel Api"
   spec.description   = "Ruby bindings for ShortPixel Api. ShortPixel Api docs can be found here: https://shortpixel.com/api-docs"
-  spec.homepage      = "https://github.com/jaredswanson/short_pixel"
+  spec.homepage      = "https://github.com/jaredswanson/shortpixel"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 

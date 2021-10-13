@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    short_pixel (0.1.1)
+    shortpixel (0.1.1)
       activesupport (~> 6.1)
       faraday (~> 1.8)
       faraday_middleware (~> 1.1)
@@ -111,7 +111,7 @@ DEPENDENCIES
   pry (~> 0.14.1)
   rake (~> 13.0)
   rubocop (~> 1.7)
-  short_pixel!
+  shortpixel!
   solargraph (~> 0.44.0)
 
 BUNDLED WITH

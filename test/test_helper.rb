@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require 'short_pixel'
+require 'shortpixel'
 require "minitest/autorun"
 require "faraday"
 require "json"
