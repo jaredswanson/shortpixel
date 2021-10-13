@@ -30,7 +30,7 @@ pngs = ['https://fakeurl.com/first_image.png', 'https://fakeurl.com/second_image
 client = ShortPixel::Client.new(api_key: <<SHORTPIXEL_API_KEY>>)
 
 reducer = client.reducer
-initial_request = reducer.call((lossy: 1, urllist: pngs)
+initial_request = reducer.call(lossy: 1, urllist: pngs)
 
 # Wait for images to process
 
