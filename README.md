@@ -24,7 +24,9 @@ The ShortPixel Reducer API expects an array of publically available urls for you
 pngs = ['https://fakeurl.com/first_image.png', 'https://fakeurl.com/second_image.png']
 
 client = ShortPixel::Client.new(api_key: <<SHORTPIXEL_API_KEY>>)
+```
 
+```ruby
 reducer = client.reducer
 initial_request = reducer.call(lossy: 1, urllist: pngs)
 
