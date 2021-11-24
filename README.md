@@ -1,4 +1,5 @@
 # ShortPixel
+Ruby bindings for the ShortPixel API.
 
 ## Installation
 
